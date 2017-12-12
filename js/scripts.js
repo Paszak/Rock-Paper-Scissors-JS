@@ -118,7 +118,7 @@ function setGamePoints() {
 }
 
 function checkGameFinish() {
-	if (player.score == 10 || computer.score == 10) {
+	if (player.score === 10 || computer.score === 10) {
 		var str = "The winner is: " + winnerFlag.toUpperCase();
 		openModal(str);
 		gameState = 'ended';
@@ -128,8 +128,8 @@ function checkGameFinish() {
 }
 
 // Get the modal
-var modal = document.getElementById('myModal'),
-	modalBody = document.getElementById('kk'),
+var modal = document.getElementById('js-myModal'),
+	modalBody = document.getElementById('js-modalBody'),
 	close = document.getElementsByClassName("close")[0];
 
 function openModal (msg) {
