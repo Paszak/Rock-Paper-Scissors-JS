@@ -3,14 +3,120 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>strona132</title>
+    <title>Game Rock Paper Scissors</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- 
+  
+  <section>
+    <div class="container">
+      <h3 class="text-center">
+        Welcome to the game
+        <span class="label label-default" style="background-color: #af9a60">Rock</span>
+        <span class="label label-info">Paper</span>
+        <span class="label label-danger">Scissors</span>
+      </h3>
+    </div>
+  </section>
 
+  <section>
+    <div id="js-newGameElement" class="container">
+      <div class="row text-center">
+        <button  id="js-newGameButton" class="btn btn-default">
+          New game
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="js-playerPickElement" class="container">
+      <div class="row text-center">
+        <button id="js-playerPick_rock" class="btn">
+          <span class="badge">
+            <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+          </span>
+        </button>
+        <button id="js-playerPick_paper"  class="btn">
+          <span class="badge">
+          <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+          </span>
+          
+        </button>
+        <button id="js-playerPick_scissors"  class="btn">
+          <span class="badge">
+          <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="js-resultsTableElement" class="container">
+      <div class="row">
+        <div class="col-xs-5 text-center">
+          <span id="js-playerName">
+          Player Name
+          </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="js-playerPoints" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-2 text-center">
+          VS.
+        </div>
+        <div class="col-xs-5 text-center">
+          Computer
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" id="js-computerPoints" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5 text-center">
+          <span id="js-playerPick">
+            Player selection
+          </span>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-5 text-center">
+          <span id="js-computerPick">
+            Computer selection
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5 text-center">
+          <span id="js-playerResult">
+            Player Score
+          </span>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-5 text-center">
+          <span id="js-computerResult">
+            Computer Score
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Game Over !!!</h2>
+    </div>
+    <div class="modal-body">
+      <h3><span id="kk"></span></h3>
+    </div>
+  </div>
+</div>
 
 <script type="text/javascript" src="js/scripts.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
