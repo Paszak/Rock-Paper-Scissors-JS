@@ -1,1 +1,2 @@
-# zadanie_9_7
+# Rock-Paper-Scissors-JS.git
+Using JS, Bootstrap3
